@@ -1,16 +1,63 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Table</title>
 
+  <style>
+    table {
+      border-collapse: separate;
+      border-spacing: 0;
+      width: 50%;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    /* Row colors */
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+
+    <tr>
+      <td>Sachin</td>
+      <td>22</td>
+      <td>Pune</td>
+    </tr>
+
+    <tr>
+      <td>Rahul</td>
+      <td>23</td>
+      <td>Mumbai</td>
+    </tr>
+
+    <tr>
+      <td>Neha</td>
+      <td>21</td>
+      <td>Delhi</td>
+    </tr>
+  </table>
 
 </body>
-
 </html>
